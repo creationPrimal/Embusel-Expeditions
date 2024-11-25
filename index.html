@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embusel Expeditions</title>
+
+    <!--fav icon-->
+    <link rel="icon" href="assets/images/embusel-logo-icon.png" type="image/png">
+
+    <!--main css-->
+    <link href="assets/css/main.css" rel="stylesheet"/>
+    <!--bootstrap cdn-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header class="header" >
+        <nav>
+            <div class="mainheader container-fluid container-xl">
+                <div class="logo">
+                    <img src="assets/images/embusel-logo.png" alt="">
+                </div>
+
+                <div class="navlist mobilemenu">
+                    <div>
+                        <button class="closemenu" onclick="closeMenu()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                              </svg>
+                        </button>
+                    </div>
+                    <ul>
+                        <a href="#home"><li class="isActive">Home</li></a>
+                        <a href="#adventures"><li>Adventures</li></a>
+                        <a href="#about"><li>About us</li></a>
+                        <a href="#footer"><li>Contacts</li></a>
+                    </ul>
+                    <a href="#adventures"><div class="getstarted">
+                        <p>Get started</p>
+                    </div></a>
+                </div>
+
+                <button class="menu" onclick="showMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!--hero-->
+    <div class="hero" id="home">
+        <div id="carouselFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/images/giraffe.jpg" class="d-block w-100" alt="..." loading="lazy">
+                <div class="slider-caption">
+                    <h5 class="fade-in">Your Next Chapter <span>Awaits!</span></h5>
+                    <div class="cap-separator fade-in"></div>
+                    <p class="fade-in">Let’s write a story worth sharing together, celebrating your journey and creating unforgettable memories.</p>
+                    <a href="#adventures"><div class="explore fade-in">
+                        <p class="fade-in">explore</p>
+                    </div></a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/images/lion.jpg" class="d-block w-100" alt="..." loading="lazy">
+                <div class="slider-caption">
+                    <h5 class="fade-in">Timeless Beauty</h5>
+                    <div class="cap-separator fade-in"></div>
+                    <p class="fade-in">Reconnect with the beauty of the world around you. <br> Embark on a journey of endless possibilities. Your adventure begins here.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/images/zanzibar.jpg" class="d-block w-100" alt="..." loading="lazy">
+                <div class="slider-caption fade-in">
+                    <h5 class="fade-in">Zanzibar Island</h5>
+                    <div class="cap-separator fade-in"></div>
+                    <p class="fade-in">Where turquoise waters meet timeless charm, lush spice farms, <br> and sun-kissed shores that tell a story of paradise.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+
+    <!--adventures-->
+    <section id="adventures">
+      <div class="container-xxl adventures">
+
+        <div class="adventures-title mb-3 fade-in">
+          <h3 class="">Adventures.</h3>
+          <div class="aboutseparator fade-in"></div>
+        </div>
+
+        <div class="adventurelist container-xxl">
+
+          <!-- southern zone-->
+          <div class="card-container mb-5 fade-in">
+            <div class="card">
+              
+              <div class="front-content" style="background-image: url('assets/images/gazelle.jpg'); background-size: cover; background-position: center;">
+                <div class="card-bg"></div>
+                <p>Southern <br> Zone</p>
+              </div>
+              <div class="content">
+                <h3 class="heading">Southern Zone</h3>
+                <div class="contentbody">
+                  <p> <i class="bi bi-check-all"></i> Selous Game Reserve</p>
+                  <p> <i class="bi bi-check-all"></i> Ruaha National Park</p>
+                  <p> <i class="bi bi-check-all"></i> Mikumi National Park</p>
+                  <p> <i class="bi bi-check-all"></i> Udzungwa Mountains</p>
+                  <p> <i class="bi bi-check-all"></i> Kitulo National Park</p>
+                  <p> <i class="bi bi-check-all"></i> Kilombero Game Reserve</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- western zone-->
+          <div class="card-container mb-5 fade-in">
+            <div class="card">
+              
+              <div class="front-content" style="background-image: url('assets/images/wildlife.jpg'); background-size: cover; background-position: center;">
+                <div class="card-bg"></div>
+                <p>Western <br> Zone</p>
+              </div>
+              <div class="content">
+                <h3 class="heading">Western zone</h3>
+                <div class="contentbody">
+                  <p> <i class="bi bi-check-all"></i> Gombe National Park</p>
+                  <p> <i class="bi bi-check-all"></i> Katavi National Park</p>
+                  <p> <i class="bi bi-check-all"></i> Kigoma Town</p>
+                  <p> <i class="bi bi-check-all"></i> Rubondo Island</p>
+                  <p> <i class="bi bi-check-all"></i> Mahale National Park</p>
+                  <p> <i class="bi bi-check-all"></i> Lake Tanganyika</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- northern zone-->
+          <div class="card-container mb-5 fade-in">
+            <div class="card">
+              
+              <div class="front-content" style="background-image: url('assets/images/elephant.jpg'); background-size: cover; background-position: center;">
+                <div class="card-bg"></div>
+                <p>Northen <br> Zone</p>
+              </div>
+              <div class="content">
+                <h3 class="heading">Northen zone</h3>
+                <div class="contentbody">
+                  <p> <i class="bi bi-check-all"></i> Serengeti National Park</p>
+                  <p> <i class="bi bi-check-all"></i> Ngorongoro Crater</p>
+                  <p> <i class="bi bi-check-all"></i> Mount Kilimanjaro</p>
+                  <p> <i class="bi bi-check-all"></i> Lake Manyara & Natron</p>
+                  <p> <i class="bi bi-check-all"></i> Tarangire National Park</p>
+                  <p> <i class="bi bi-check-all"></i> Maasai & Hadzabe Culture</p>
+                  <p> <i class="bi bi-check-all"></i> Bird watching & photography</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- eastern-->
+          <div class="card-container mb-5 fade-in">
+            <div class="card">
+              
+              <div class="front-content" style="background-image: url('assets/images/newzanzibar.jpg'); background-size: cover; background-position: center;">
+                <div class="card-bg"></div>
+                <p>Eastern <br>Zone & Coastal</p>
+              </div>
+              <div class="content">
+                <h3 class="heading">Eastern & Coastal</h3>
+                <div class="contentbody">
+                  <p> <i class="bi bi-check-all"></i> Zanzibar Island</p>
+                  <p> <i class="bi bi-check-all"></i> Saadani National Park</p>
+                  <p> <i class="bi bi-check-all"></i> Pande Game Reserve</p>
+                  <p> <i class="bi bi-check-all"></i> Bagamoyo</p>
+                  <p> <i class="bi bi-check-all"></i> Rufiji Delta</p>
+                  <p> <i class="bi bi-check-all"></i> Dar es Salaam Marine Reserves</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="about section light-background">
+
+        <div class="container-xl">
+  
+          <div class="row gy-4 justify-content-between">
+            
+            <div class="col-lg-6 content" >
+              <div class="about-title">
+                <h3 class="fade-in">About Us.</h3>
+                <div class="aboutseparator  fade-in"></div>
+              </div>
+              
+              <p>
+                Embusel Expeditions, a registered Tanzanian tour operator, offers unforgettable safaris showcasing the Great Migration, Mount Kilimanjaro, Zanzibar beaches, and Tanzania's rich culture. 
+              </p>
+              <p class="aboutlist fade-in">
+                <i class="bi bi-check-all"></i>  With options for groups, families, or individuals, from luxury to budget, tours are expertly planned to highlight breathtaking landscapes and abundant wildlife.
+              </p>
+              <p class="aboutlist fade-in">
+                <i class="bi bi-check-all"></i>  Embusel carefully plans every detail to showcase Tanzania's breathtaking landscapes, abundant wildlife, and rich cultural heritage.
+              </p>
+              <p class="aboutlist fade-in">
+                <i class="bi bi-check-all"></i>  Custom 4WD vans and skilled guides ensure a seamless and memorable adventure, supported by a robust online booking system for travelers worldwide.
+              </p>
+            </div>
+
+            <div class="aboutimg col-lg-6 position-relative align-self-start fade-in" >
+              <img src="assets/images/tour.jpg" loading="lazy" alt="">
+            </div>
+
+          </div>
+  
+        </div>
+  
+    </section><!-- /About Section -->
+
+
+    <!-- vision, mission, values Section -->
+    <section id="vision" class="vision section light-background">
+
+      <div class="container-xl">
+
+        <div class="row gy-4 justify-content-between">
+          <div class="col-lg-12 content visiontabs fade-in" >
+           
+            <ul class="nav nav-tabs vision-tabs justify-content-center" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Our Vision</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Our Mission</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Our Values</button>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                <p> <br>Our vision is to become the most trusted and distinguished in-bound tour operator, renowned 
+                  for delivering transformative, inspiring, and authentic adventures. We aim to exceed expectations 
+                  at every step, offering personalized experiences that immerse travelers in the unparalleled beauty, 
+                  vibrant cultures, and rich heritage of each destination. <br> <br> By creating unforgettable journeys filled
+                   with meaningful connections and cherished moments, we aspire to leave a lasting legacy 
+                  of joy, discovery, and inspiration for every traveler who embarks on an adventure with us.</p>
+              </div>
+              <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                <p>
+                  <br>To provide unforgettable travel experiences that connect people with the beauty, culture, 
+                  and spirit of each destination, fostering meaningful connections, inspiring personal growth, 
+                  and creating cherished memories. <br> <br> We aim to immerse travelers in the heart of each location, blending
+                   authentic encounters with exceptional service, all while promoting 
+                  sustainability, celebrating diversity, and honoring the unique heritage of every place we visit.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                <p><br></p>
+                <p><i class="bi bi-check-all"></i>  Excellence</p>
+                <p><i class="bi bi-check-all"></i>  Responsibility and Accountability</p>
+                <p><i class="bi bi-check-all"></i>  Loyalty, Respect & Eco-Friendliness</p>
+                <p><i class="bi bi-check-all"></i>  Warm heartedness and Customercare</p>
+                <p><i class="bi bi-check-all"></i>  Integrity, Reliability, Professionalism and Personalisation</p>
+              </div>
+            </div>
+
+
+          </div>
+
+<!--           
+          <div class="visionimg col-lg-6 position-relative align-self-start fade-in" >
+            <img src="assets/images/visionsvg.svg" loading="lazy" alt="">
+          </div> -->
+
+        </div>
+
+
+      </div>
+
+    </section><!-- /Vision Section -->
+
+    <!-- footer -->
+    <footer id="footer" class="footer pb-3 pt-5">
+
+  
+      <div class="container footer-top">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6 footer-about">
+            <h4>Contact Us</h4>
+            </a>
+            <div class="footer-contact pt-3">
+              <p class="footeritembody">Do not hesitate to contact us. we are an expert team and we are happy to assist you</p>
+              <p class="mt-3"><strong>Office:</strong> <a href="tel: +255784745446"> <span>+255 784 745 446</span></a> </p>
+              <p ><strong>Mobile:</strong> <a href="tel: +255658670388"> <span>+255 658 670 388</span></a> </p>
+              <p><strong>Email:</strong> <a href="emailto: reservation@embusel.co.tz"> <span>reservation@embusel.co.tz</span></a></p>
+            </div>
+          </div>
+  
+          <div class="col-lg-4 col-md-3 footer-links ">
+            <h4>Useful Links</h4>
+            <ul class="pt-3"> 
+              <li><i class="bi bi-chevron-right"></i> <a href="#home">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#about">About us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#adventures">Adventures</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#vision">More</a></li>
+            </ul>
+          </div>
+  
+      
+  
+          <div class="col-lg-4 col-md-12">
+            <h4>Location</h4>
+            <p class="pt-3 footeritembody">Embusel Expeditions, Goba Road No. 48, Dar es Salaam - Tanzania</p>
+            <p class="mt-3 locationbtn"><a href="https://maps.app.goo.gl/NHaZnQn57Wtt259H6"><i class="bi bi-geo-alt-fill"></i> <span>View on Google map</span></a> </p>
+          </div>
+  
+        </div>
+      </div>
+
+      <div class=" container footerdivider mt-3"></div>
+  
+      <div class="container copyright text-center mt-4">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Embusel Expeditions</strong> <span>All Rights Reserved <br> 2024</span></p>
+      </div>
+  
+    </footer>
+
+    <div class="loaderdiv">
+      <div class="three-body">
+        <div class="three-body__dot"></div>
+        <div class="three-body__dot"></div>
+        <div class="three-body__dot"></div>
+      </div>
+
+    </div>
+
+
+
+    <!--app js-->
+    <script src="assets/js/app.js"></script>
+    <!--bootstrap js cdn-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+</body>
+</html>
