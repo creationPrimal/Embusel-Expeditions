@@ -43,9 +43,7 @@ function closeMenu() {
 
 document.addEventListener('DOMContentLoaded', () => {
     const loader = document.querySelector('.loaderdiv');
-    loader.style.display = 'none'
-    loader.style.opacity = '0'
-    loader.style.transition = '200ms'
+    loader.style.display = 'none';
 })
 
 
