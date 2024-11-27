@@ -782,6 +782,9 @@ a{
 .footer .footer-links i, .footer .sitename, .footer .locationbtn i{
     color: var(--orangeColor);
 }
+.locationbtn span:hover{
+    color: var(--orangeColor);
+}
 .footer .footer-contact strong, .footer .locationbtn{
     font-size: 18px;
 }
@@ -799,6 +802,22 @@ a{
 }
 .footer .footer-contact p{
     margin-bottom: 3px;
+}
+.footer .socialmedia{
+    display: flex;
+    margin-top: 30px;
+    flex-direction: row;
+}
+.footer .socialmedia a{
+    margin-right: 20px;
+}
+.footer .socialmedia i{
+    font-size: 22px;
+}
+.footer .socialmedia i:hover{
+    font-size: 28px;
+    color: var(--orangeColor);
+    transition: 200ms;
 }
 
 
